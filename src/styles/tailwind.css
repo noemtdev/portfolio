@@ -1,0 +1,227 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Fonts */
+@font-face {
+    font-family: 'Reddit Sans';
+    src: url("../fonts/RedditSans-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/Product\ Sans\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url('../fonts/Product\ Sans\ Bold.ttf');
+}
+
+/* Colors */
+.text-google-black {
+    color: #202124;
+}
+
+.text-google-medium-blue {
+    color: #4285F4;
+}
+
+.text-google-red {
+    color: #A50E0E;
+}
+
+.text-google-yellow {
+    color: #FBBC04;
+}
+
+.text-google-green {
+    color: #0D652D;
+}
+
+.text-google-blue {
+    color: #174EA6;
+}
+
+.text-google-orange {
+    color: #E37400;
+}
+
+.text-google-light-blue {
+    color: #D2E3FC;
+}
+
+.text-google-light-red {
+    color: #FAD2CF;
+}
+
+.text-google-light-yellow {
+    color: #FEEFC3;
+}
+
+.text-google-light-green {
+    color: #CEEAD6;
+}
+
+.text-google-medium-red {
+    color: #EA4335;
+}
+
+.text-google-medium-green {
+    color: #34A853;
+}
+
+.text-google-light-grey {
+    color: #F1F3F4;
+}
+
+.text-google-medium-grey {
+    color: #9AA0A6;
+}
+
+.text-google-dark-grey {
+    color: #3C4043;
+}
+
+/* Background Colors */
+.bg-google-black {
+    background-color: #202124;
+}
+
+.bg-google-medium-blue {
+    background-color: #4285F4;
+}
+
+.bg-google-red {
+    background-color: #A50E0E;
+}
+
+.bg-google-yellow {
+    background-color: #FBBC04;
+}
+
+.bg-google-green {
+    background-color: #0D652D;
+}
+
+.bg-google-blue {
+    background-color: #174EA6;
+}
+
+.bg-google-orange {
+    background-color: #E37400;
+}
+
+.bg-google-light-blue {
+    background-color: #D2E3FC;
+}
+
+.bg-google-light-red {
+    background-color: #FAD2CF;
+}
+
+.bg-google-light-yellow {
+    background-color: #FEEFC3;
+}
+
+.bg-google-light-green {
+    background-color: #CEEAD6;
+}
+
+.bg-google-medium-red {
+    background-color: #EA4335;
+}
+
+.bg-google-medium-green {
+    background-color: #34A853;
+}
+
+.bg-google-light-grey {
+    background-color: #F1F3F4;
+}
+
+.bg-google-medium-grey {
+    background-color: #9AA0A6;
+}
+
+.bg-google-dark-grey {
+    background-color: #3C4043;
+}
+
+/* Other Custom CSS */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.image-container img {
+    position: absolute;
+
+
+    object-fit: cover;
+}
+
+.feature-image {
+
+    height: 250px;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.1px;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+
+.bolded {
+    font-family: 'Product Sans Bold', sans-serif;
+}
+
+nav {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Product Sans', sans-serif;
+    background-color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.german-flag {
+    background: linear-gradient(
+        to bottom,
+        #202124 0%,
+        #202124 16.66%,
+        #A50E0E 16.66%,
+        #A50E0E 33.33%,
+        #FBBC04 33.33%,
+        #FBBC04 50%,
+        #202124 50%,
+        #202124 66.66%,
+        #A50E0E 66.66%,
+        #A50E0E 83.33%,
+        #FBBC04 83.33%,
+        #FBBC04 100%
+    );
+    background-size: 100% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: slide 3s linear infinite;
+}
+
+.big-size {
+    font-size: 2em;
+}
+
+@keyframes slide {
+    0% {background-position: 0% 0%;}
+    100% {background-position: 0% -100%;}
+}
