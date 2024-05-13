@@ -31,7 +31,7 @@ const About = () => {
             </a>
         </section>
         <section className="text-center flex justify-center mt-6">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=noemtdev&count_private=true&hide=procfile,css,shell,html,batchfile&theme=dark&border_color=000000&cache_seconds=1800&layout=compact&langs_count=10&custom_title=Most%20Used%20Coding%20Languages" alt="noemtdev" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=noemtdev&count_private=true&hide=procfile,css,shell,html,batchfile&theme=dark&border_color=000000&cache_seconds=1800&layout=compact&langs_count=10&custom_title=Programming%20Languages%20I%20use" alt="noemtdev" />
         </section>
     </>
 

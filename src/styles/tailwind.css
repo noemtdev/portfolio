@@ -3,10 +3,6 @@
 @import 'tailwindcss/utilities';
 
 /* Fonts */
-@font-face {
-    font-family: 'Reddit Sans';
-    src: url("../fonts/RedditSans-Black.ttf");
-}
 
 @font-face {
     font-family: 'Product Sans';
