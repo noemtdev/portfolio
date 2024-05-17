@@ -21,7 +21,6 @@ const ProjectsPage = () => {
                             <img src={project.smallimg} alt={project.name} className="absolute top-0 right-0 h-16 w-16 p-1"  style={{"border-radius": "100%"}}/>
                             <h3 className="text-2xl font-bold">{project.name}</h3>
                             <p className="text-lg mb-4">{project.desc}</p>
-                            <img src={project.img} alt={project.name}></img>
                             <div className="flex flex-wrap gap-4">
                                 {project.tech.map((tech, index) => (
                                     <img key={index} src={tech_icons[tech]} alt={tech} className="h-8 mt-3"/>

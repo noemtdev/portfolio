@@ -1,0 +1,77 @@
+.darkTheme .embed-buttons-wrapper>div:before,.lightTheme .embed-buttons-wrapper>div:before{
+    background:linear-gradient(0deg,rgb(255, 255, 255) 33%,rgba(0,0,0,0) 100%)
+}
+div.embed-container{
+    background-color:var(--black0)
+}
+div.embed-screen{
+    --black9: #000;
+    --black6: #000;
+    --black4: #000;
+    --black5: #000;
+    --black3: #A2AAB4;
+    --black2: #000;
+    --black1: #000;
+    --black0: transparent;
+    --white: #fff;
+    --black: #121417;
+}
+.embed-variant-header.active{
+    border-width:2px
+}
+.embed-gateway-container .gateway-list-item{
+    border-width:2px
+}
+.embed-container,.embed-header,.embed-counter,.sellix-product-rewards,.embed-volume,.embed-coupon-input,.embed-coupon-applied,input.sellix-input,.gateway-list-item,.embed-variant-header,.embed-addons{
+    background-color:var(--black0)!important
+}
+.sellix-input-with-currency-wrapper input{
+    background-color:var(--black0)!important
+}
+button.sellix-button{
+    background-color:#121417
+}
+button.sellix-button:hover{
+    background-color:#1e2124
+}
+.gateway-list-item-blockchain.bg-white{
+    background-color:var(--black0)!important
+}
+input.sellix-input{
+    background-color:var(--white)!important
+}
+input.sellix-input::placeholder{
+    color:var(--black0)
+}
+
+.embed-stock{
+    color:#000
+}
+.embed-footer-item:hover{
+    background-color:#b8b8b8;
+}
+
+.sellix-product-rewards-list-row-title{
+    color:#000
+}
+.gateway-title{
+    color:var(--black9)
+}
+.gateway-list-item-title>div:first-child {
+    color:var(--black6)
+}
+.gateway-subtitle,.gateway-list-item-title>div:last-child{
+    color:var(--black5)
+}
+.embed-gateway-container .gateway-list-item{
+    border-color:var(--black5)!important
+}
+.embed-gateway-container {
+    border-color:var(--black9)!important
+}
+.sellix-button{
+    color:var(--white)
+}
+.gateway-list-item.active{
+    box-shadow:transparent 0 0 0 0,transparent 0 0 0 0,rgba(18,20,23,.06) 0 1px 2px 0
+}

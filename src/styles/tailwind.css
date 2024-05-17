@@ -160,24 +160,9 @@
 }
 
 .feature-image {
-
     height: 250px;
-
 }
 
-::-webkit-scrollbar {
-    width: 0.1px;
-    background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: transparent;
-  }
-
-
-.bolded {
-    font-family: 'Product Sans Bold', sans-serif;
-}
 
 nav {
     list-style-type: none;
@@ -188,6 +173,23 @@ body {
     background-color: white;
     margin-left: 1%;
     margin-right: 1%;
+}
+
+::-webkit-scrollbar {
+    width: 20px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px; 
+    height: 50vh;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .german-flag {
@@ -220,4 +222,133 @@ body {
 @keyframes slide {
     0% {background-position: 0% 0%;}
     100% {background-position: 0% -100%;}
+}
+
+body {
+    cursor: url('stain-of-paint-cursor.cur'), auto;
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+    cursor: url('stain-of-paint-pointer.cur'), auto;
+}
+
+.bolded {
+    font-family: 'Product Sans Bold', sans-serif;
+}
+
+.star {
+    transform-style: preserve-3d;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    color: red;
+  }
+  .star:before {
+    position: absolute;
+    content: '\2726';
+    color: inherit;
+    inset: 0;
+    box-shadow: 0 0 1em .5em #a3c2;
+    filter: drop-shadow(0 0 .5em white);
+    text-shadow: 0 0 .8em #fff5;
+  }
+
+.rainbowthing {
+	--border-angle-1: 0deg;
+	--border-angle-2: 90deg;
+	--border-angle-3: 180deg;
+	color: inherit;
+	font-family: inherit;
+	border: 0;
+	padding: var(--border-size);
+	display: flex;
+	width: max-content;
+	border-radius: var(--border-radius);
+	background-color: transparent;
+	background-image: conic-gradient(
+			from var(--border-angle-1) at 10% 15%,
+			transparent,
+			var(--bright-blue) 10%,
+			transparent 30%,
+			transparent
+		),
+		conic-gradient(
+			from var(--border-angle-2) at 70% 60%,
+			transparent,
+			var(--bright-green) 10%,
+			transparent 60%,
+			transparent
+		),
+		conic-gradient(
+			from var(--border-angle-3) at 50% 20%,
+			transparent,
+			var(--bright-red) 10%,
+			transparent 50%,
+			transparent
+		);
+	animation: 
+		rotateBackground 3s linear infinite,
+		rotateBackground2 8s linear infinite,
+		rotateBackground3 13s linear infinite;
+}
+
+.rainbowthing div {
+	background: var(--background); 
+	border-radius: calc(var(--border-radius) - var(--border-size));
+	color: var(--foreground);
+}
+
+@property --border-angle-1 {
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 0deg;
+}
+
+@property --border-angle-2 {
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 90deg;
+}
+
+@property --border-angle-3 {
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 180deg;
+}
+
+
+/* sRGB color. */
+:root {
+	--bright-blue: rgb(0, 100, 255);
+	--bright-green: rgb(0, 255, 0);
+	--bright-red: rgb(255, 0, 0);
+	--background: white;
+	--border-size: 2px;
+	--border-radius: 0.75em;
+}
+
+/* Display-P3 color, when supported. */
+@supports (color: color(display-p3 1 1 1)) {
+	:root {
+		--bright-blue: color(display-p3 0 0.2 1);
+		--bright-green: color(display-p3 0.4 1 0);
+		--bright-red: color(display-p3 1 0 0);
+	}
+}
+
+@keyframes rotateBackground {
+	to { --border-angle-1: 360deg; }
+}
+
+@keyframes rotateBackground2 {
+	to { --border-angle-2: -270deg; }
+}
+
+@keyframes rotateBackground3 {
+	to { --border-angle-3: 540deg; }
+}
+
+.fade-out {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
 }

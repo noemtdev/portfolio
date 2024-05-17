@@ -14,15 +14,21 @@ module.exports = {
             desc: "The website you are currently looking at.",
             tech: ["React.js", "Tailwind CSS"],
             link: "/",
-            img: "/assets/portfolio.png",
             smallimg: "/assets/icon.png"
+        },
+        {
+            name: "Auth Bot v2",
+            desc: "A Discord Bot with great functionality.",
+            tech: ["py-cord", "MongoDB", "Quart"],
+            link: "https://github.com/noemtdev/auth-bot-v2",
+            smallimg: "https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg"
+
         },
         {
             name: "pixly",
             desc: "A Discord bot with many Hypixel Skyblock Features.",
             tech: ["py-cord", "MongoDB", "Quart"],
             link: "https://discord.gg/pixly",
-            img: "/assets/pixly.png",
             smallimg: "/assets/pixly-icon.png"
         },
         {
@@ -30,7 +36,6 @@ module.exports = {
             desc: "A Python library to parse Hypixel Skyblock API data.",
             tech: ["Python"],
             link: "https://github.com/noemtdev/skyblockparser",
-            img: "/assets/skyblockparser.png",
             smallimg: "/assets/skyblockparser-icon.png"
         },
         {
@@ -42,12 +47,18 @@ module.exports = {
             smallimg: "/assets/blockhelper-icon.png"
         },
         {
+            name: "StundenPlan24 API",
+            desc: "Allows you to get your schools schedule",
+            tech: ["Python"],
+            link: "https://github.com/noemtdev/stundenplan24",
+            smallimg: "/assets/qeTS3l-6RTlI1J5i5qTVeYSsBJxKmTuvYsRl6hczuaOogOIUaxi0HzYlZgMa4nPekTM.png"
+        },
+        {
             name: "more to come",
             desc: "I'm always working on new projects!",
             tech: [],
             link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            img: "/assets/mtc.png",
             smallimg: "/assets/mtc.png"
-        }
+        },
     ]
 }
