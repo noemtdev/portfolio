@@ -35,12 +35,12 @@ const Products = () => {
                                     <img key={index} src={tech_icons[tech]} alt={tech} className="h-8 mt-3"/>
                                 ))}
                             </div>
-                            <div className="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded" 
+                            <button className="absolute bottom-0 right-0 bg-blue-500 text-white px-4 py-2 rounded" 
                                 data-sellix-product={product.sellix} id="sellixButton"   
                                 data-sellix-css="https://noemt.dev/sellix.css"
                             >
                                 Purchase ({product.price})
-                            </div>
+                            </button>
                         </div>
                     ))}
                 </section>

@@ -1,0 +1,81 @@
+{
+    "GET": {
+      "/api/test": {
+        "path": "/api/test",
+        "method": "GET",
+        "description": "Sends a greeting message",
+        "parameters": []
+      },
+      "/api/users/:id": {
+        "path": "/api/users/:id",
+        "method": "GET",
+        "description": "Fetches a user by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "description": "The ID of the user",
+            "type": "path"
+          }
+        ]
+      },
+      "/api/posts": {
+        "path": "/api/posts",
+        "method": "GET",
+        "description": "Fetches all posts",
+        "parameters": []
+      },
+      "/api/posts/:id": {
+        "path": "/api/posts/:id",
+        "method": "GET",
+        "description": "Fetches a post by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "description": "The ID of the post",
+            "type": "path"
+          }
+        ]
+      }
+    },
+    "POST": {
+      "/api/users": {
+        "path": "/api/users",
+        "method": "POST",
+        "description": "Creates a new user",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "The name of the user",
+            "type": "body"
+          },
+          {
+            "name": "email",
+            "description": "The email of the user",
+            "type": "body"
+          }
+        ]
+      },
+      "/api/posts": {
+        "path": "/api/posts",
+        "method": "POST",
+        "description": "Creates a new post",
+        "parameters": [
+          {
+            "name": "title",
+            "description": "The title of the post",
+            "type": "body"
+          },
+          {
+            "name": "content",
+            "description": "The content of the post",
+            "type": "body"
+          },
+          {
+            "name": "userId",
+            "description": "The ID of the user who created the post",
+            "type": "body"
+          }
+        ]
+      }
+    }
+  }
