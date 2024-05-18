@@ -236,23 +236,6 @@ a:hover, button:hover, input[type="submit"]:hover {
     font-family: 'Product Sans Bold', sans-serif;
 }
 
-.star {
-    transform-style: preserve-3d;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    color: red;
-  }
-  .star:before {
-    position: absolute;
-    content: '\2726';
-    color: inherit;
-    inset: 0;
-    box-shadow: 0 0 1em .5em #a3c2;
-    filter: drop-shadow(0 0 .5em white);
-    text-shadow: 0 0 .8em #fff5;
-  }
-
 .rainbowthing {
 	--border-angle-1: 0deg;
 	--border-angle-2: 90deg;
