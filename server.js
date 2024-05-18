@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const fs = require('fs');
 const mongoose = require('mongoose');
-const { api_key } = require('./creds');
+const apiKey = require('./models/key');
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors());
@@ -19,22 +19,34 @@ mongoose.connect("mongodb://127.0.0.1:27017/pixly", {}).then(() => {
     console.log(err);
 });
 
+
+function getKeys() {
+    return apiKey.find({}).exec();
+}
+
+function getKey(key) {
+    return apiKey.findOne({ key: key }).exec();
+}
+
 app.use((req, res, next) => {
     if (req.path.includes('/api/')) {
-
-        if (req.path.endsWith('/api/')) {
-            next();
-        } else if (req.query.key == api_key) {
-            next();
-        } else {
-            res.status(401).send({
-                error: 'Unauthorized'
+        getKeys()
+            .then(keys => {
+                if (req.path.endsWith('/api/')) {
+                    next();
+                } else if (keys.some(keyObj => keyObj.key === req.query.key)) {
+                    apiKey.incrementUsesBy1(req.query.key);
+                    next();
+                } else {
+                    res.status(401).send({ error: 'Unauthorized' });
+                }
+            })
+            .catch(err => {
+                res.status(500).send({ error: 'An error occurred while querying the database' });
             });
-        }
     } else {
         next();
     }
-
 });
 
 const routesData = {}
@@ -64,6 +76,26 @@ routes.forEach(method => {
 
 
 fs.writeFileSync(path.join(__dirname, 'build', 'output-docs.json'), JSON.stringify(routesData));
+
+app.get('/api/stats', (req, res) => {
+    const key = req.query.key;
+    if (!key) {
+        res.status(400).send({ error: 'No key provided' });
+    }
+
+    getKey(key)
+        .then(keyObj => {
+            if (!keyObj) {
+                res.status(404).send({ error: 'Key not found' });
+            } else {
+                res.send({ uses: keyObj.uses, discord: JSON.stringify(keyObj.discord), key: keyObj.key});
+            }
+        })
+        .catch(err => {
+            res.status(500).send({ error: 'An error occurred while querying the database' });
+        });
+
+});
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
