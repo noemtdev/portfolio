@@ -7,6 +7,8 @@ import NotFoundPage from "./pages/404";
 import ImprintPage from "./pages/imprint";
 import Products from './pages/products';
 import ApiDocs from './pages/api';
+import Tos from './pages/tos';
+import Privacy from './pages/privacy';
 
 function App() {
     return (
@@ -18,6 +20,8 @@ function App() {
                 <Route path="/imprint" element={<ImprintPage />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/api" element={<ApiDocs />} />
+                <Route path="/tos" element={<Tos />} />
+                <Route path="/privacy" element={<Privacy />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </Router>
