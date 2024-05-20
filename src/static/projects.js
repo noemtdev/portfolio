@@ -9,7 +9,7 @@ module.exports = {
         "SQLite": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/1200px-Sqlite-square-icon.svg.png",
         "Node.js": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
     },
-    projects: [
+    minor: [
         {
             name: "Portfolio",
             desc: "The website you are currently looking at.",
@@ -33,27 +33,6 @@ module.exports = {
             smallimg: "/assets/discord.png"
         },
         {
-            name: "pixly",
-            desc: "A Discord bot with many Hypixel Skyblock Features.",
-            tech: ["py-cord", "MongoDB", "Quart"],
-            link: "https://github.com/noemtdev/pixly-bot",
-            smallimg: "/assets/pixly-icon.png"
-        },
-        {
-            name: "pixly API",
-            desc: "The API for pixly.",
-            tech: ["Node.js"],
-            link: "/api",
-            smallimg: "/assets/pixly-icon.png"
-        },
-        {
-            name: "Hypixel Listing Bot",
-            desc: "A Discord Bot that allows you to run an account shop.",
-            tech: ["py-cord", "SQLite", "Quart"],
-            link: "https://bots.noemt.dev",
-            smallimg: "/assets/discord.png"
-        },
-        {
             name: "skyblockparser",
             desc: "A Python library to parse Hypixel Skyblock API data.",
             tech: ["Python"],
@@ -74,6 +53,36 @@ module.exports = {
             tech: ["Python"],
             link: "https://github.com/noemtdev/stundenplan24",
             smallimg: "/assets/qeTS3l-6RTlI1J5i5qTVeYSsBJxKmTuvYsRl6hczuaOogOIUaxi0HzYlZgMa4nPekTM.png"
+        },
+        {
+            name: "more to come",
+            desc: "I'm always working on new projects!",
+            tech: [],
+            link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            smallimg: "/assets/mtc.png"
+        },
+    ],
+    major: [
+        {
+            name: "pixly",
+            desc: "A Discord bot with many Hypixel Skyblock Features.",
+            tech: ["py-cord", "MongoDB", "Quart"],
+            link: "https://github.com/noemtdev/pixly-bot",
+            smallimg: "/assets/pixly-icon.png"
+        },
+        {
+            name: "pixly API",
+            desc: "The API for pixly.",
+            tech: ["Node.js"],
+            link: "/api",
+            smallimg: "/assets/pixly-icon.png"
+        },
+        {
+            name: "Hypixel Listing Bot",
+            desc: "A Discord Bot that allows you to run an account shop.",
+            tech: ["py-cord", "SQLite", "Quart"],
+            link: "https://bots.noemt.dev",
+            smallimg: "/assets/discord.png"
         },
         {
             name: "more to come",
