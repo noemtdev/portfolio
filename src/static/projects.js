@@ -6,14 +6,15 @@ module.exports = {
         "MongoDB": "https://www.svgrepo.com/show/331488/mongodb.svg",
         "Quart": "https://pgjones.gitlab.io/quart/_static/logo_short.png",
         "Python": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-        "SQLite": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/1200px-Sqlite-square-icon.svg.png"
+        "SQLite": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/1200px-Sqlite-square-icon.svg.png",
+        "Node.js": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
     },
     projects: [
         {
             name: "Portfolio",
             desc: "The website you are currently looking at.",
             tech: ["React.js", "Tailwind CSS"],
-            link: "/",
+            link: "https://github.com/noemtdev/portfolio",
             smallimg: "/assets/icon.png"
         },
         {
@@ -21,15 +22,36 @@ module.exports = {
             desc: "A Discord Bot with great functionality.",
             tech: ["py-cord", "MongoDB", "Quart"],
             link: "https://github.com/noemtdev/auth-bot-v2",
-            smallimg: "https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg"
+            smallimg: "/assets/discord.png"
 
+        },
+        {
+            name: "Bot Template v2",
+            desc: "A template for Discord Bots.",
+            tech: ["py-cord", "MongoDB", "Quart"],
+            link: "https://github.com/noemtdev/bot-template-v2",
+            smallimg: "/assets/discord.png"
         },
         {
             name: "pixly",
             desc: "A Discord bot with many Hypixel Skyblock Features.",
             tech: ["py-cord", "MongoDB", "Quart"],
-            link: "https://discord.gg/pixly",
+            link: "https://github.com/noemtdev/pixly-bot",
             smallimg: "/assets/pixly-icon.png"
+        },
+        {
+            name: "pixly API",
+            desc: "The API for pixly.",
+            tech: ["Node.js"],
+            link: "/api",
+            smallimg: "/assets/pixly-icon.png"
+        },
+        {
+            name: "Hypixel Listing Bot",
+            desc: "A Discord Bot that allows you to run an account shop.",
+            tech: ["py-cord", "SQLite", "Quart"],
+            link: "https://bots.noemt.dev",
+            smallimg: "/assets/discord.png"
         },
         {
             name: "skyblockparser",
