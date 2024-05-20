@@ -1,3 +1,3 @@
 module.exports = {
-    admin: "6ctauhrkcqr4wzh3jqdq5y"
+    admin: "no key 4 u :("
 }
